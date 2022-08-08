@@ -1,4 +1,5 @@
 package hello.advanced.trace.callback;
 
-public interface TraceCallback {
+public interface TraceCallback<T> {
+    <T> T call();
 }
